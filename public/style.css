@@ -77,3 +77,27 @@ body {
 .blue-text {
   color: #96e0ee;
 }
+
+.social-1 {
+  position: relative;
+  top: 14rem;
+  left: -12.5rem;
+}
+
+.social-2 {
+  position: relative;
+  top: 17rem;
+  left: -10rem;
+}
+
+.social-3 {
+  position: relative;
+  top: 17rem;
+  left: -7rem;
+}
+
+.social-4 {
+  position: relative;
+  top: 14rem;
+  left: -6rem;
+}
