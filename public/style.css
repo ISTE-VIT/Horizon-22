@@ -256,6 +256,10 @@ body {
   color: white;
 }
 
+.speaker-sec {
+  padding: 3rem;
+}
+
 .speaker-right {
   text-align: right;
 }
