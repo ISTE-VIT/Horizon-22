@@ -12,13 +12,21 @@ body {
   z-index: 2;
   margin: 0;
   color: white;
-  background-image: url("/public/imgs/landing-bg.gif");
+  background-image: url("/public/imgs/landing-bg2.gif");
   background-size: cover;
+  background-position: 50%;
   background-repeat: no-repeat;
   font-family: "Poppins", sans-serif;
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+@media (max-width: 778px) {
+  .landing-section {
+    background-size: cover;
+    background-position: 50% 50%;
+  }
 }
 
 #defaultCanvas0 {
@@ -100,4 +108,397 @@ body {
   position: relative;
   top: 14rem;
   left: -6rem;
+}
+
+* {
+  margin: 0;
+}
+.slide {
+  height: 100vh;
+  width: 100vw;
+  font-family: "Poppins", sans-serif;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  text-transform: uppercase;
+  padding-top: 50px;
+}
+
+.title-top {
+  text-align: center;
+  margin-top: 2vh;
+  font-weight: 300;
+  font-size: 40px;
+}
+
+.title {
+  font-size: 100px;
+  text-align: center;
+}
+
+.line {
+  height: 5px;
+  width: 10vw;
+  margin: auto;
+  margin-bottom: 2vh;
+  background-color: rgb(203, 240, 255);
+}
+
+.description {
+  text-align: center;
+  max-width: 80vw;
+  margin: auto;
+}
+
+.registerbtn {
+  width: 200px;
+  height: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 40px;
+  font-size: 20px;
+  background-color: rgb(203, 240, 255);
+  color: black;
+  font-weight: 600;
+  margin: auto;
+  margin-top: 8vh;
+}
+.imgcomp {
+  height: 35vh;
+  width: 100vw;
+  position: relative;
+}
+.imgcomp img {
+  float: bottom;
+  max-width: 100vw;
+  position: absolute;
+  bottom: 0;
+}
+
+.carousel-inner {
+  height: 100vh;
+}
+.carousel-item {
+  height: 100vh;
+}
+
+.d-block {
+  position: absolute;
+  bottom: 0;
+}
+
+@media (max-width: 1000px) and (min-width: 600px) {
+  .title {
+    font-size: 120px;
+  }
+  .description {
+    font-size: 25px;
+  }
+  .line {
+    margin-top: 8vh;
+    width: 25vw;
+  }
+  .title-top {
+    margin-top: 5vh;
+  }
+  .registerbtn {
+    width: 250px;
+    height: 90px;
+    font-size: 30px;
+  }
+}
+
+@media only screen and (max-width: 650px) {
+  .title {
+    font-size: 75px;
+  }
+  .line {
+    margin-top: 8vh;
+    width: 25vw;
+  }
+  .description {
+    font-size: 15px;
+  }
+}
+
+.planets {
+  padding-top: 120px;
+  display: flex;
+  justify-content: center;
+  align-self: center;
+}
+
+.planets img {
+  animation: rotation 50s infinite linear;
+}
+
+@keyframes rotation {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(359deg);
+  }
+}
+
+#speakers {
+  padding: 5rem;
+}
+
+.speaker-head {
+  font-size: 3rem;
+  font-weight: 600;
+  margin-bottom: 2rem;
+  font-family: "Poppins", sans-serif;
+  color: white;
+}
+
+.speaker-right {
+  text-align: right;
+}
+
+.speaker-judge-heading {
+  text-align: right;
+  padding: 1rem;
+  padding-bottom: 4rem;
+}
+
+.speaker-heading {
+  color: #96e0ee;
+  font-family: "Poppins";
+  padding-left: 2rem;
+}
+
+.speaker-heading span {
+  color: white;
+}
+
+.judges-heading {
+  color: white;
+  font-family: "Poppins";
+  padding-left: 2rem;
+}
+
+.judges-span {
+  text-decoration: underline #96e0ee;
+  text-underline-offset: 1rem;
+}
+
+.speaker-names {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  text-align: center;
+  justify-content: space-around;
+}
+
+.speaker-images {
+  width: 12rem;
+  height: 12rem;
+  background-color: transparent;
+  border-radius: 100%;
+  border: 13px solid;
+  border-color: rgba(150, 224, 238, 1) transparent rgba(150, 224, 238, 1)
+    transparent;
+  overflow: hidden;
+  transform: rotate(-45deg);
+  transition: 0.5s;
+  padding: 0.3rem;
+  margin: 3rem;
+}
+
+.speaker-images .speaker-img {
+  transform: rotate(45deg);
+  background-color: transparent;
+  border-radius: 100%;
+  overflow: hidden;
+  transition: 0.5s;
+}
+
+.speaker-images:hover {
+  transform: rotate(45deg);
+  transition: 0.5s;
+}
+
+.speaker-images:hover .speaker-img {
+  transform: rotate(-45deg);
+  transition: 0.5s;
+}
+
+.speaker-images img {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+.Team-section {
+  padding: 3rem;
+}
+
+.team-heading {
+  color: white;
+  font-family: "Poppins";
+}
+
+.team-heading span {
+  text-decoration: underline #96e0ee;
+  text-underline-offset: 1rem;
+}
+
+.convenor-info {
+  text-align: center;
+  padding-top: 2rem;
+}
+
+.convenor-info h2 {
+  font-family: poppins;
+  color: white;
+}
+
+.convenor-section {
+  justify-content: center;
+  vertical-align: middle;
+  text-align: center;
+}
+
+.convenor-section-images {
+  display: flex;
+  justify-content: space-around;
+}
+
+.convenor-image-div {
+  width: 12rem;
+  height: 12rem;
+  background-color: transparent;
+  border-radius: 100%;
+  border: 13px solid;
+  border-color: rgba(150, 224, 238, 1) transparent rgba(150, 224, 238, 1)
+    transparent;
+  overflow: hidden;
+  transform: rotate(-45deg);
+  transition: 0.5s;
+  padding: 0.3rem;
+  margin: 3rem;
+}
+
+.convenor-image-div .convenor-image {
+  transform: rotate(45deg);
+  background-color: transparent;
+  border-radius: 100%;
+  overflow: hidden;
+  transition: 0.5s;
+}
+
+.convenor-image-div:hover {
+  transform: rotate(45deg);
+  transition: 0.5s;
+}
+
+.convenor-image-div:hover .convenor-image {
+  transform: rotate(-45deg);
+  transition: 0.5s;
+}
+
+.convenor-image-div img {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+.junior-core-carousel {
+  display: grid;
+  grid-template-columns: auto auto auto auto auto;
+  margin: 2rem;
+}
+
+.junior-core-names {
+  color: white;
+  font-family: Poppins;
+  border: 1px solid rgba(94, 106, 128, 0.7);
+  text-align: center;
+  padding: 1rem;
+  transition: 0.2s;
+}
+
+.junior-core-names:hover {
+  color: black;
+  background-color: white;
+}
+
+.junior-core-carousel-2 {
+  display: none;
+  grid-template-columns: auto auto auto auto auto;
+  margin: 2rem;
+}
+
+.junior-core-carousel-3 {
+  display: none;
+  grid-template-columns: auto auto auto auto auto;
+  margin: 2rem;
+}
+
+.junior-core-carousel-4 {
+  display: none;
+  grid-template-columns: auto auto auto auto auto;
+  margin: 2rem;
+}
+
+.carousel-arrows {
+  color: white;
+  text-align: center;
+}
+
+.fa-solid-btn {
+  padding: 1rem;
+  border: 1px solid white;
+  border-radius: 100%;
+  margin: 1rem;
+  transition: 0.2s;
+  cursor: pointer;
+  outline: none;
+}
+
+.fa-solid-btn:hover {
+  background-color: black;
+  color: white;
+}
+
+.horizon-images {
+  display: grid;
+  grid-template-columns: auto auto auto auto auto auto auto auto;
+  margin: 4rem;
+  border: 1px solid white;
+  text-align: center;
+  overflow: hidden;
+  position: relative;
+  /* z-index: 2; */
+}
+
+.horizon-images img {
+  width: 10rem;
+  height: 10rem;
+  padding: 0%;
+  margin: 0%;
+  opacity: 0;
+  transition: 1s;
+  z-index: 2;
+}
+
+.horizon-images img:hover {
+  opacity: 1;
+  cursor: pointer;
+}
+
+.horizon-heading {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-family: Poppins;
+  color: white;
+  font-size: 6rem;
+  text-align: center;
+  /* border: 1px solid orange; */
 }
