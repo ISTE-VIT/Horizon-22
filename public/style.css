@@ -61,6 +61,7 @@ body {
   color: white;
   font-family: "Poppins", sans-serif;
   font-size: 1.3rem;
+  text-align: justify;
 }
 
 .about-left {
@@ -90,6 +91,27 @@ body {
   position: relative;
   top: 14rem;
   left: -12.5rem;
+}
+
+.mlpic-1 {
+  position: relative;
+  top: 2rem;
+  left: 12.5rem;
+  height: 80px;
+}
+
+.mlpic-2 {
+  position: relative;
+  top: 2rem;
+  left: 12.5rem;
+  height: 80px;
+}
+
+.mlpic-3 {
+  position: relative;
+  top: 2rem;
+  left: 12.5rem;
+  height: 80px;
 }
 
 .social-2 {
@@ -124,6 +146,12 @@ body {
   justify-content: space-between;
   text-transform: uppercase;
   padding-top: 50px;
+}
+
+@media (max-width: 778px) {
+  .slide {
+    height: auto;
+  }
 }
 
 .title-top {
@@ -185,6 +213,15 @@ body {
   height: 100vh;
 }
 
+@media (max-width: 778px) {
+  .carousel-inner {
+    height: 130vh;
+  }
+  .carousel-item {
+    height: 130vh;
+  }
+}
+
 .d-block {
   position: absolute;
   bottom: 0;
@@ -231,7 +268,7 @@ body {
   align-self: center;
 }
 
-.planets img {
+.planets .pla {
   animation: rotation 50s infinite linear;
 }
 
@@ -248,12 +285,30 @@ body {
   padding: 5rem;
 }
 
+#team {
+  padding: 5rem;
+}
+
 .speaker-head {
   font-size: 3rem;
   font-weight: 600;
   margin-bottom: 2rem;
   font-family: "Poppins", sans-serif;
   color: white;
+}
+
+.team-head {
+  font-size: 3rem;
+  font-weight: 600;
+  margin-left: 1.2rem;
+  font-family: "Poppins", sans-serif;
+  color: white;
+}
+
+.team-headings {
+  color: white;
+  font-size: 1.8rem;
+  text-align: center;
 }
 
 .speaker-sec {
@@ -505,4 +560,24 @@ body {
   font-size: 6rem;
   text-align: center;
   /* border: 1px solid orange; */
+}
+
+.speaker-name {
+  color: white;
+  font-family: Poppins;
+  font-size: 1.5rem;
+  margin-top: -10px;
+}
+
+.speaker-card {
+  display: flex !important;
+  justify-content: center !important;
+  align-items: center !important;
+  flex-direction: column !important;
+}
+
+@media (max-width: 768px) {
+  .about-left {
+    display: none;
+  }
 }
