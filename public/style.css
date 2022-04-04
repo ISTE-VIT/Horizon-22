@@ -1,5 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 
+@import url("http://fonts.cdnfonts.com/css/optima");
+
 body {
   margin: 0;
   padding: 0;
@@ -16,7 +18,7 @@ body {
   background-size: cover;
   background-position: 50%;
   background-repeat: no-repeat;
-  font-family: "Poppins", sans-serif;
+  font-family: "Optima", sans-serif;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -59,7 +61,7 @@ body {
   flex-direction: column;
   justify-content: center;
   color: white;
-  font-family: "Poppins", sans-serif;
+  font-family: "Optima", sans-serif;
   font-size: 1.3rem;
   text-align: justify;
 }
@@ -79,7 +81,7 @@ body {
   font-size: 3rem;
   font-weight: 600;
   margin-bottom: 2rem;
-  font-family: "Poppins", sans-serif;
+  font-family: "Optima", sans-serif;
   color: white;
 }
 
@@ -95,29 +97,97 @@ body {
 
 .mlpic-1 {
   position: relative;
-  top: 2rem;
-  left: 12.5rem;
+  top: 4rem;
+  right: 7rem;
   height: 80px;
 }
 
 .mlpic-2 {
   position: relative;
   top: 2rem;
-  left: 12.5rem;
+
   height: 80px;
 }
 
 .mlpic-3 {
   position: relative;
-  top: 2rem;
-  left: 12.5rem;
+  top: 4rem;
+  left: 7rem;
   height: 80px;
+}
+
+@media (max-width: 778px) {
+  .mlpic-1 {
+    position: relative;
+    top: 4rem;
+    right: 4rem;
+    height: 80px;
+  }
+
+  .mlpic-2 {
+    position: relative;
+    top: 2rem;
+
+    height: 80px;
+  }
+
+  .mlpic-3 {
+    position: relative;
+    top: 4rem;
+    left: 4rem;
+    height: 80px;
+  }
 }
 
 .social-2 {
   position: relative;
   top: 17rem;
   left: -10rem;
+}
+
+.mlpic-1,
+.mlpic-3 {
+  -webkit-animation: mover 2s infinite alternate;
+  animation: mover 2s infinite alternate;
+}
+
+.mlpic-2 {
+  -webkit-animation: mover2 2s infinite alternate;
+  animation: mover2 2s infinite alternate;
+}
+
+@-webkit-keyframes mover {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(-5px);
+  }
+}
+@keyframes mover {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(-10px);
+  }
+}
+
+@-webkit-keyframes mover2 {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(5px);
+  }
+}
+@keyframes mover2 {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(10px);
+  }
 }
 
 .social-3 {
@@ -138,7 +208,7 @@ body {
 .slide {
   height: 100vh;
   width: 100vw;
-  font-family: "Poppins", sans-serif;
+  font-family: "Optima", sans-serif;
   color: white;
   display: flex;
   flex-direction: column;
@@ -262,7 +332,7 @@ body {
 }
 
 .planets {
-  padding-top: 120px;
+  padding-top: 60px;
   display: flex;
   justify-content: center;
   align-self: center;
@@ -293,7 +363,7 @@ body {
   font-size: 3rem;
   font-weight: 600;
   margin-bottom: 2rem;
-  font-family: "Poppins", sans-serif;
+  font-family: "Optima", sans-serif;
   color: white;
 }
 
@@ -301,7 +371,7 @@ body {
   font-size: 3rem;
   font-weight: 600;
   margin-left: 1.2rem;
-  font-family: "Poppins", sans-serif;
+  font-family: "Optima", sans-serif;
   color: white;
 }
 
@@ -327,7 +397,7 @@ body {
 
 .speaker-heading {
   color: #96e0ee;
-  font-family: "Poppins";
+  font-family: "Optima", sans-serif;
   padding-left: 2rem;
 }
 
@@ -337,7 +407,7 @@ body {
 
 .judges-heading {
   color: white;
-  font-family: "Poppins";
+  font-family: "Optima", sans-serif;
   padding-left: 2rem;
 }
 
@@ -398,7 +468,7 @@ body {
 
 .team-heading {
   color: white;
-  font-family: "Poppins";
+  font-family: "Optima", sans-serif;
 }
 
 .team-heading span {
@@ -412,7 +482,7 @@ body {
 }
 
 .convenor-info h2 {
-  font-family: poppins;
+  font-family: "Optima", sans-serif;
   color: white;
 }
 
@@ -474,7 +544,7 @@ body {
 
 .junior-core-names {
   color: white;
-  font-family: Poppins;
+  font-family: "Optima", sans-serif;
   border: 1px solid rgba(94, 106, 128, 0.7);
   text-align: center;
   padding: 1rem;
@@ -555,7 +625,7 @@ body {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  font-family: Poppins;
+  font-family: "Optima", sans-serif;
   color: white;
   font-size: 6rem;
   text-align: center;
@@ -564,7 +634,7 @@ body {
 
 .speaker-name {
   color: white;
-  font-family: Poppins;
+  font-family: "Optima", sans-serif;
   font-size: 1.5rem;
   margin-top: -10px;
 }
