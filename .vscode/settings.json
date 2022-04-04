@@ -1,0 +1,4 @@
+{
+  "appService.defaultWebAppToDeploy": "/subscriptions/99fd0bf3-b947-4511-a682-ecf2381c3ac6/resourceGroups/appsvc_linux_centralus_basic2/providers/Microsoft.Web/sites/horizon-website-2022",
+  "appService.deploySubpath": "."
+}
