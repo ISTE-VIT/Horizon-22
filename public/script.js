@@ -59,3 +59,32 @@ function Meteor() {
     ellipse(this.x, this.y, this.size, this.size);
   };
 }
+
+let currentPage = 0;
+const leftButton = document.querySelector("#carousel-left");
+const rightButton = document.querySelector("#carousel-right");
+const panels = document.querySelectorAll(".coordinators-panel");
+
+const renderPanel = () => {
+  panels.forEach((panel, idx) => {
+    if (idx == currentPage) {
+      panel.style.display = "flex";
+      panel.style.opacity = "1";
+    } else {
+      panel.style.display = "none";
+      panel.style.opacity = "0";
+    }
+  });
+};
+
+//show page 0
+renderPanel();
+
+rightButton.addEventListener("click", () => {
+  currentPage = Math.min(currentPage + 1, 2);
+  renderPanel();
+});
+leftButton.addEventListener("click", () => {
+  currentPage = Math.max(currentPage - 1, 0);
+  renderPanel();
+});

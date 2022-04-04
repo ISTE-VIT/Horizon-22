@@ -185,6 +185,33 @@
       </div>
     </section>
 
+
+    <section id="technica">
+              <div class="row">
+          <div class="col-lg-6">
+
+        <div class="technica-title-container">
+              <div class="tech-title-top">WORKSHOP</div>
+              <div class="tech-title">TECHNICA</div>
+              <div class="line-tech"></div>
+
+        </div>
+            <div class="technica-text">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus
+              iste nulla tenetur deleniti accusamus, quae voluptatem vitae
+              ducimus perspiciatis consequatur, corporis est similique debitis,
+              cum autem officiis blanditiis perferendis aperiam unde placeat.
+              Quia cupiditate nihil recusandae.
+            </div>
+                        <div class="registerbtn"><div>Explore</div></div>
+
+          </div>
+          <div class="col-lg-6 technica-logo-container">
+             <img src="imgs/technica.png" class="technica-logo" alt="" srcset="">
+          </div>
+        </div>
+    </section>
+
     <section id="speakers">
       <div class="row">
  <div class="col-lg-6  about-left">
@@ -400,6 +427,40 @@
           </div>
           </div>
         </div>
+          <div class="team-headings">COORDINATORS</div>
+<div class="coordinators-carousel container">
+
+        <div class="row my-3 mx-0 coordinators-panel" >
+            <% for(var j=0; j < 30; j++) { %>
+                <div class="col-6 col-lg-2 py-3 px-0 border-white border coordinator-cell">
+                    <a href="" target="_blank">
+                       Sahil Kaling
+                    </a>
+                </div>
+                <% } %>
+        </div>
+           <div class="row my-3 mx-0 coordinators-panel" >
+            <% for(var j=0; j < 30; j++) { %>
+                <div class="col-6 col-lg-2 py-3 px-0 border-white border coordinator-cell">
+                    <a href="" target="_blank">
+Tirth Patel                    </a>
+                </div>
+                <% } %>
+        </div>
+           <div class="row my-3 mx-0 coordinators-panel" >
+            <% for(var j=0; j < 30; j++) { %>
+                <div class="col-6 col-lg-2 py-3 px-0 border-white border coordinator-cell">
+                    <a href="" target="_blank">
+Vidyarth                    </a>
+                </div>
+                <% } %>
+        </div>
+
+</div>
+<div class="d-flex justify-content-center">
+    <img src="imgs/carousel-left.svg" class="mr-2" id="carousel-left" alt="">
+    <img src="imgs/carousel-right.svg" class="ml-2" id="carousel-right" alt="">
+</div>
       </div>
      
 
@@ -494,5 +555,36 @@
       crossorigin="anonymous"
     ></script>
     <script src="script.js"></script>
+    <script>
+      let currentPage = 0;
+const leftButton = document.querySelector("#carousel-left");
+const rightButton = document.querySelector("#carousel-right");
+const panels = document.querySelectorAll(".coordinators-panel");
+
+const renderPanel = () => {
+  panels.forEach((panel, idx) => {
+    if (idx == currentPage) {
+      panel.style.display = "flex";
+      panel.style.opacity = "1";
+    } else {
+      panel.style.display = "none";
+      panel.style.opacity = "0";
+    }
+  });
+};
+
+//show page 0
+renderPanel();
+
+rightButton.addEventListener("click", () => {
+  currentPage = Math.min(currentPage + 1, 2);
+  renderPanel();
+});
+leftButton.addEventListener("click", () => {
+  currentPage = Math.max(currentPage - 1, 0);
+  renderPanel();
+});
+
+    </script>
   </body>
 </html>
