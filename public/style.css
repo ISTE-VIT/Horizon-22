@@ -789,3 +789,16 @@ body {
     margin-top: 1rem;
   }
 }
+
+.mobile-team {
+  display: none;
+}
+
+@media (max-width: 768px) {
+  .lap-team {
+    display: none;
+  }
+  .mobile-team {
+    display: block !important;
+  }
+}

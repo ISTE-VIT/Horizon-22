@@ -20,7 +20,7 @@ function setup() {
 //This method will be called many times per second
 function draw() {
   //We will clear the screen each time, with all black, and 10% opacity, giving us our trail effect
-  background(color(218, 70, 16, 0.3));
+  background(color(218, 70, 14, 0.3));
 
   //For each meteor in the array (meteors.length will return a value representing this)
   for (var i = 0; i < meteors.length; i++) {
