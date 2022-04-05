@@ -6,6 +6,7 @@ body {
   margin: 0;
   padding: 0;
   overflow-x: hidden;
+  background-color: #0c1423;
 }
 
 .landing-section {
@@ -22,6 +23,8 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
+
+  flex-direction: column;
 }
 
 @media (max-width: 778px) {
@@ -390,7 +393,6 @@ body {
 .team-head {
   font-size: 3rem;
   font-weight: 600;
-  margin-left: 1.2rem;
   font-family: "Optima", sans-serif;
   color: white;
 }
@@ -655,8 +657,9 @@ body {
 .speaker-name {
   color: white;
   font-family: "Optima", sans-serif;
-  font-size: 1.5rem;
+  font-size: 1.4rem;
   margin-top: -10px;
+  text-align: center;
 }
 
 .speaker-card {
@@ -664,12 +667,6 @@ body {
   justify-content: center !important;
   align-items: center !important;
   flex-direction: column !important;
-}
-
-@media (max-width: 768px) {
-  .about-left {
-    display: none;
-  }
 }
 
 #team .coordinator-cell {
@@ -800,5 +797,24 @@ body {
   }
   .mobile-team {
     display: block !important;
+  }
+}
+
+.top-right-logo {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  height: 80px;
+}
+
+.horizon-tagline {
+  padding-top: 20px;
+  font-size: 1.5rem;
+}
+
+@media (max-width: 768px) {
+  video {
+    width: 90%;
+    margin-bottom: 40px;
   }
 }
