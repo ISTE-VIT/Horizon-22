@@ -81,7 +81,7 @@ const renderPanel = () => {
 renderPanel();
 
 rightButton.addEventListener("click", () => {
-  currentPage = Math.min(currentPage + 1, 2);
+  currentPage = Math.min(currentPage + 1, 3);
   renderPanel();
 });
 leftButton.addEventListener("click", () => {
