@@ -12,7 +12,7 @@ function setup() {
   colorMode(HSB);
 
   //Now, we will push back 300 new meteors into an array
-  for (var i = 0; i < 50; i++) {
+  for (var i = 0; i < 30; i++) {
     meteors.push(new Meteor());
   }
 }
