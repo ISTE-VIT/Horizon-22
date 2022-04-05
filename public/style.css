@@ -731,6 +731,9 @@ body {
 #team .coordinator-cell {
   transition: all 0.2s;
   cursor: pointer;
+  border: rgba(255, 255, 255, 0.395) solid 1px;
+  border-radius: 5px;
+
   text-align: center;
 }
 #team .coordinator-cell a {
