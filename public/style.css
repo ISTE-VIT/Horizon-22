@@ -941,3 +941,10 @@ body {
     max-width: 20%;
   }
 }
+
+.discord-logo {
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  height: 50px;
+}
