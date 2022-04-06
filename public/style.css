@@ -306,7 +306,7 @@ body {
   color: black;
   font-weight: 600;
   margin: auto;
-  margin-top: 8vh;
+  margin-top: 5vh !important;
   font-family: "Poppins", sans-serif;
 }
 .imgcomp {
