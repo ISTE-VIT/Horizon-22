@@ -66,6 +66,7 @@ body {
 
 .landing-logo {
   height: 25rem;
+  margin-top: 25px;
 }
 
 @media screen and (max-width: 768px) {
