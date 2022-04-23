@@ -78,7 +78,7 @@ const coredata = [
   "Satvik Jain",
   "Shashank Nair",
   "Shashank Suggala",
-  "Shashwat Wakhdekar",
+  "Shashwat Wankhedekar",
   "Shatakshi Mohan",
   "Shinjini Sen",
   "Shivabhijit Sairam",
