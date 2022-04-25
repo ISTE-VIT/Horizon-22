@@ -872,3 +872,11 @@ canvas {
     height: 100px;
   }
 }
+
+.discord-logo {
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  height: 40px;
+  z-index: 999999;
+}
