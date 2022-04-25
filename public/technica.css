@@ -825,3 +825,27 @@ canvas {
     margin: 20px 0px;
   }
 }
+
+.contact-sec {
+  background-color: #27a5ef;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 30px 0px;
+}
+
+.social-media {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.love {
+  color: white;
+  font-size: 1rem;
+  font-family: "Inter";
+  font-style: normal;
+  margin-top: 30px;
+}
