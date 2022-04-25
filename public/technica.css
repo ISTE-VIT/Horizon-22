@@ -849,3 +849,26 @@ canvas {
   font-style: normal;
   margin-top: 30px;
 }
+
+.mlh-ph {
+  display: none;
+}
+
+@media screen and (max-width: 778px) {
+  .nav-badge {
+    display: none;
+  }
+
+  .nav-right {
+    position: relative;
+    right: 0px;
+  }
+
+  .mlh-ph {
+    display: block;
+    position: absolute;
+    top: 0px;
+    right: 90px;
+    height: 100px;
+  }
+}
