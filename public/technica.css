@@ -181,6 +181,7 @@ canvas {
   padding-top: 50%;
   padding-bottom: 30%;
   font-size: 90px;
+  font-weight: 700;
   writing-mode: vertical-rl;
   letter-spacing: 10px;
   position: relative;
@@ -236,6 +237,7 @@ canvas {
 
 .about-sec h1 {
   transform: rotate(-180deg);
+  font-weight: 700;
 }
 
 /* Flex INIT */
@@ -879,4 +881,61 @@ canvas {
   right: 30px;
   height: 40px;
   z-index: 999999;
+}
+
+.heading {
+  font-family: Inter;
+  font-weight: 700;
+  font-size: 4.5rem;
+}
+
+@media (max-width: 778px) {
+  .sponsors {
+    padding: 0;
+    margin-top: 5rem;
+  }
+
+  .heading {
+    font-size: 2.5rem;
+  }
+}
+
+.sponsors {
+  margin-top: 5rem;
+}
+
+.spo-head {
+  font-family: Inter;
+  font-weight: 500;
+  font-size: 2.5rem;
+}
+
+.spo-row {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin-top: 2rem;
+}
+
+.spo-col {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 2rem;
+}
+
+.spo-logo {
+  height: 12rem;
+}
+
+@media (max-width: 778px) {
+  .spo-head {
+    font-size: 2rem;
+  }
+
+  .spo-logo {
+    height: 14rem;
+  }
 }
