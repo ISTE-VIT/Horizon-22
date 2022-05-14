@@ -911,10 +911,6 @@ canvas {
 }
 
 .spo-row {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
   margin-top: 2rem;
 }
 
@@ -924,10 +920,12 @@ canvas {
   justify-content: center;
   align-items: center;
   margin-top: 2rem;
+  margin-bottom: 2rem;
 }
 
 .spo-logo {
-  height: 12rem;
+  width: 20rem;
+  margin-top: 40px;
 }
 
 @media (max-width: 778px) {
@@ -936,6 +934,6 @@ canvas {
   }
 
   .spo-logo {
-    height: 10rem;
+    width: 15rem;
   }
 }
