@@ -3,7 +3,7 @@ var meteors = [];
 //first, we define our setup method. This will be run once, when the sketch is loaded.
 function setup() {
   //create a canvas of full width and height
-  createCanvas(window.innerWidth, window.innerHeight);
+  createCanvas("100px", "100px");
 
   //position ellipses via their center
   ellipseMode(RADIUS);
