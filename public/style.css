@@ -949,3 +949,20 @@ body {
   right: 30px;
   height: 50px;
 }
+
+.spo-div {
+  position: absolute;
+  left: 60vw;
+  top: 28vw;
+}
+
+.spo-img {
+  width: 10rem;
+}
+
+@media screen and (max-width: 990px) {
+  .spo-div {
+    left: 30vw;
+    top: 135vw;
+  }
+}
